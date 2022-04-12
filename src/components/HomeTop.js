@@ -8,6 +8,8 @@ import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import PeopleIcon from '@material-ui/icons/People';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import {useState,useEffect} from "react";
+import Modal from "./Modal";
+import Contact from "./Contact";
 
 const HomeTop=()=>{
     const [assurances,set_assurances]=useState([
@@ -99,6 +101,8 @@ const HomeTop=()=>{
                 </div>
                 
             </div>
+
+            <Modal content={<Contact />}/>
         </div>
     );
 }
