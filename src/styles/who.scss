@@ -1,0 +1,25 @@
+.who{
+    background-color:#ededed;
+    >.content{
+        width:80%;
+        margin:auto;
+        text-align: justify;
+        background-color:white;
+        padding:1rem;
+        >*{
+            color:#3a434a;
+        }
+        >h1{
+            text-align: center;
+            color:dimgray;
+            padding:1rem;
+
+        }
+
+        >ul{
+            padding:0.5rem;
+            margin-left: 1rem;
+
+        }
+    }
+}

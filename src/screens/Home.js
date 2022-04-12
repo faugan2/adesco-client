@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import HomeTop from "../components/HomeTop";
 import Parteners from "../components/Parteners";
 import Engagements from "../components/Engagements";
-
+import Who from "../components/Who";
 const Home=()=>{
     return(
         <div className="home">
@@ -11,6 +11,7 @@ const Home=()=>{
             <HomeTop />
             <Parteners />
             <Engagements />
+            <Who />
         </div>
     )
 }
