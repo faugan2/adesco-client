@@ -10,7 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import {useState,useEffect} from "react";
 
-
+import ccm from "./img/ccm.jpg";
 
 const Nav=()=>{
   
@@ -27,6 +27,7 @@ const Nav=()=>{
     return(
         <div className="nav">
             <div className="left">
+                <img src={ccm} /> 
                 <h1>CCM <span>EXPRESS</span></h1>
             </div>
             <div className="right">
