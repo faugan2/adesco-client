@@ -44,14 +44,14 @@ const Nav=()=>{
                     <li>
                         <FolderOpenIcon />
                         <Link to="/"><a>Produits & Services</a></Link>
-                        <ul className="dropdown">
+                        {/*<ul className="dropdown">
                             <li>
                                 <Link to="/"><a>Particulier</a></Link>
                             </li> 
                             <li>    
                                 <Link to="/"><a>Professionnel</a></Link>
                             </li> 
-                        </ul>
+                        </ul>*/}
                     </li>
                     
 
