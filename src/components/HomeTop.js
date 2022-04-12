@@ -2,7 +2,44 @@ import "../styles/home_top.scss";
 import "../styles/home_top_mobile.scss";
 import banner from "./img/banner.webp";
 import AirplayIcon from '@material-ui/icons/Airplay';
+import DriveEtaIcon from '@material-ui/icons/DriveEta';
+import HomeIcon from '@material-ui/icons/Home';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
+import PeopleIcon from '@material-ui/icons/People';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import {useState,useEffect} from "react";
+
 const HomeTop=()=>{
+    const [assurances,set_assurances]=useState([
+        {
+            data:[
+                "Auto",
+                "Habitation",
+                "Voyage",
+                "RC chef de famille"
+            ]   
+        },
+        {
+            data:[
+                "Voyage",
+                "Accident",
+                "Transport de marchandises",
+                "Bris de glace",
+                "Santé"
+            ]
+        }
+    ])
+    const [type,set_type]=useState(0);
+    const [data,set_data]=useState(null);
+
+    useEffect(()=>{
+        set_data(assurances[type].data);
+    },[type])
+
+    const type_changed=(e)=>{
+        const v=parseInt(e.target.value);
+        set_type(v);
+    }
     return(
         <div className="home_top" style={{backgroundImage:`url(${banner})`,backgroundRepeat: 'no-repeat',}}>
             <div className="top">
@@ -12,31 +49,31 @@ const HomeTop=()=>{
             <div className="center">
                 <div></div>
                 <div className="content">
-                    <h2>titre de ce que nous faisons</h2>
-                    <button>first button
+                    <h2>Etes-vous un particulier ?</h2>
+                    <button>Assurance auto
                         <div>
-                            <AirplayIcon  />
+                            <DriveEtaIcon  />
                         </div>
                     </button>
                     <div>
-                        <button>button2
+                        <button>Assurance habitation
                         <div>
-                            <AirplayIcon  />
+                            <HomeIcon  />
                         </div>
                         </button>
-                        <button>button3
+                        <button>assurance voyage
                         <div>
-                            <AirplayIcon  />
+                            <FlightTakeoffIcon  />
                         </div>
                         </button>
-                        <button>button4
+                        <button>assurance cp
                         <div>
-                            <AirplayIcon  />
+                            <PeopleIcon  />
                         </div>
                         </button>
-                        <button>button5
+                        <button>Voir plus
                         <div>
-                            <AirplayIcon  />
+                            <MoreHorizIcon  />
                         </div>
                         </button>
                     </div>
@@ -45,11 +82,18 @@ const HomeTop=()=>{
             <div className="bottom">
                 <div>
                     <h2>Quelle assurance recherchez-vous ?</h2>
-                    <select>
-                        <option>Particulier</option>
+                    <select onChange={type_changed}>
+                        <option value="0">Particulier</option>
+                        <option value="1">Professionnel</option>
                     </select>
                     <select>
-                        <option>choisir</option>
+                        {
+                            data?.map((item,i)=>{
+                                return(
+                                    <option key={i}>{item}</option>
+                                )
+                            })
+                        }
                     </select>
                     <button>Nous conacter</button>
                 </div>

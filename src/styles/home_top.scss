@@ -38,6 +38,7 @@
                    margin-bottom: 1rem;
                    font-size:2rem;
                    color:white;
+                   background-color:rgba(0,0,0,0.1);
                }
                >button{
                    padding:2rem;
@@ -49,6 +50,10 @@
                    background-color:white;
                    position:relative;
                    cursor: pointer;
+                   font-size: 1.6rem;
+                   text-transform: uppercase;
+                   font-weight: 700;
+                   color:#3a434a;
                    &:hover{
                        opacity: 0.9;
                        >div{
@@ -64,7 +69,7 @@
                        width:50px;
                        height: 50px;
                        border-radius: 50%;
-                       background-color:indianred;
+                       background-color:var(--blue);
                        display:flex;
                        align-items: center;
                        justify-content:center;
@@ -91,13 +96,16 @@
                        border-radius: 5px;
                        background-color:white;
                        position:relative;
-
                        cursor: pointer;
+                       color:#3a434a;
+                       font-weight: 700;
+                       text-transform: uppercase;
+                       font-size: 0.9rem;
                         &:hover{
                             opacity: 0.9;
                             >div{
                                 margin-right: 1rem;
-                                transition:margin 700ms ;
+                                transition:margin 700ms;
                             }
                         }
                        
@@ -108,7 +116,7 @@
                         width:50px;
                         height: 50px;
                         border-radius: 50%;
-                        background-color:indianred;
+                        background-color:var(--blue);
                         display:flex;
                         align-items: center;
                         justify-content:center;
@@ -125,7 +133,7 @@
    }
 
    >.bottom{
-       height:100px;
+       min-height:100px;
        background-color:rgba(0,0,0,0.5);
        color:white;
        display:flex;
@@ -143,13 +151,17 @@
            >select{
                padding:1rem;
                border-radius: 5px;
+               font-size: 1rem;
            }
            >button{
                padding:1rem;
-               background-color:indianred;
+               background-color:var(--blue);
                color:white;
                border:none;
                border-radius: 5px;
+               font-size: 1.2rem;
+               text-transform: uppercase;
+               font-weight: bold;
            }
        }
    }
