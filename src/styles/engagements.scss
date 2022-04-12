@@ -1,0 +1,60 @@
+.engagements{
+    margin-bottom: 2rem;
+    background-color: #ededed;
+    padding-top: 1rem;
+    min-height: 500px;
+    >*{
+        width:80vw;
+        margin:auto;
+        
+        &.top{
+            
+            font-size: 1.2rem;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            background-color:white;
+            
+           
+            >h2{
+                text-transform: uppercase;
+                color:dimgray;
+                padding:1rem;
+            }
+        }
+
+        &.content{
+            background-color:white;
+            
+
+            display:flex;
+            align-items: center;
+            >div{
+                flex:1;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                border-right:1px solid silver;
+                min-height:120px;
+                border-top: 1px solid silver;
+                padding:1rem;
+                &:nth-child(4){
+                    border-right: none
+                }
+
+                >svg{
+                    color:var(--blue);
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                }
+
+                >p{
+                    text-align: center;
+                    font-size: 1rem;
+                    color:#3a434a;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
