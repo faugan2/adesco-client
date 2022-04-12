@@ -1,8 +1,7 @@
 .footer{
     border:1px solid #e3e3e3;
-    min-height: 150px;
+    
     background-color:white;
-    padding-bottom:2rem;
 
     >.content{
        
@@ -11,6 +10,7 @@
         display:grid;
         grid-template-columns:25% 25% 25% 25%;
         margin-top: 1rem;
+        padding-bottom: 1rem;
         >div{
            
             >h4{
@@ -29,6 +29,15 @@
                     }
                 }
             }
+        }
+    }
+
+    >.bottom{
+        background-color:#ededed;
+        >.content{
+            width:80%;
+            margin:auto;
+            padding:2rem;
         }
     }
 }

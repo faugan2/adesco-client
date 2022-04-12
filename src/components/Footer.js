@@ -43,6 +43,13 @@ const Footer=()=>{
                     </ul>
                 </div>
             </div>
+
+            <div className="bottom">
+                <div className="content">
+                <p>ccmcourtiers.com - Copyright &copy; 2018-2022 - Tous droits résevés.</p>
+                </div>
+                
+            </div>
         </div>
     );
 }
