@@ -4,6 +4,9 @@ import HomeTop from "../components/HomeTop";
 import Parteners from "../components/Parteners";
 import Engagements from "../components/Engagements";
 import Who from "../components/Who";
+import Une from "../components/Une";
+import Informer from "../components/Informer";
+
 const Home=()=>{
     return(
         <div className="home">
@@ -12,6 +15,8 @@ const Home=()=>{
             <Parteners />
             <Engagements />
             <Who />
+            <Une />
+            <Informer />
         </div>
     )
 }
