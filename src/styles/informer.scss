@@ -2,6 +2,7 @@
     
     background-color:#ededed;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     
     >*{
         width:80%;
@@ -32,6 +33,9 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     border-radius: 5px;
+                    >svg{
+                        display:none;
+                    }
                 }
             }
 

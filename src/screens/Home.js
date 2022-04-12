@@ -6,6 +6,7 @@ import Engagements from "../components/Engagements";
 import Who from "../components/Who";
 import Une from "../components/Une";
 import Informer from "../components/Informer";
+import Footer from "../components/Footer";
 
 const Home=()=>{
     return(
@@ -17,6 +18,7 @@ const Home=()=>{
             <Who />
             <Une />
             <Informer />
+            <Footer />
         </div>
     )
 }

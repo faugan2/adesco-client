@@ -1,0 +1,34 @@
+.footer{
+    border:1px solid #e3e3e3;
+    min-height: 150px;
+    background-color:white;
+    padding-bottom:2rem;
+
+    >.content{
+       
+        width:80%;
+        margin:auto;
+        display:grid;
+        grid-template-columns:25% 25% 25% 25%;
+        margin-top: 1rem;
+        >div{
+           
+            >h4{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color:dimgray;
+            }
+            >ul{
+                list-style: none;
+                margin-left: 1rem;
+                >li{
+                    >a{
+                        text-decoration: none;
+                        color:#3a434a;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

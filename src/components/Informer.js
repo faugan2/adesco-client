@@ -1,6 +1,7 @@
 import "../styles/informer.scss";
 import "../styles/informer_mobile.scss";
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 const Informer=()=>{
     return(
         <div className="informer">
@@ -9,7 +10,11 @@ const Informer=()=>{
                     <MenuBookIcon />
                 </button>
                 <h1>Nous vous informons <hr /></h1>
-                <button className="btn_all">Toutes les actualités de l'assurance</button>
+                <button className="btn_all">
+                    <MoreHorizIcon style={{color:"white"}}/>
+                    <span>
+                    Toutes les actualités de l'assurance</span>
+                </button>
             </div>
             <div className="content">
                 <div>

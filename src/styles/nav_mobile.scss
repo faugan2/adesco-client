@@ -14,10 +14,11 @@
         >.right{
             display:none;
             margin-top: -1000px;
-            
+            transition:700ms;
             &.active{
                 display:flex;
-                animation:3s ease-in 1s 2 reverse both paused slide-in;
+                margin-top:auto;
+                transition:700ms;
                 >ul{
                     flex-direction: column;
                     position:fixed;
